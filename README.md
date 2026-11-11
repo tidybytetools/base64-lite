@@ -16,13 +16,15 @@
 
 Free tool that encodes or decodes Base64 for text and local files. Optional URL-safe alphabet and data-URI output.
 
-Need it at scale or from an AI agent? Use the Apify version: **[base64-encode-decode on Apify](https://apify.com/tidybytetools/base64-encode-decode)**
+Need it at scale in the cloud? A pay-per-use Apify Actor is in our publish queue and is **not public yet**. This free local tool is the one you can use today. We will add the Store link here after it goes live.
 
 Plain code, not AI, so the same input always gives the same output. Runs on your own computer. MIT license. Works with Python 3.10 and newer, on Windows, Mac and Linux.
 
+Also searched as: ES: codificar base64, decodificar base64 / PT: codificar base64 / DE: Base64 kodieren / FR: encoder en base64 / JA: Base64エンコード、Base64デコード
+
 ## Links
 
-- **[Apify (no-install cloud version)](https://apify.com/tidybytetools/base64-encode-decode)** — pay only for what you use, about $0.001 per unique item. Failed items are free. (This listing goes public this week.)
+- A pay-per-use Apify cloud version is in our publish queue and is **not public yet**. This free local tool is the one you can use today.
 
 <!-- mcp-name: io.github.tidybytetools/base64-lite -->
 
@@ -87,7 +89,7 @@ When you run it in a terminal it prints one short line about the Apify version t
 
 ## Lite vs Apify
 
-| | lite (free, this repo) | [base64-encode-decode on Apify](https://apify.com/tidybytetools/base64-encode-decode) |
+| | lite (free, this repo) | Apify cloud version (not public yet) |
 |---|---|---|
 | Encode and decode text or files | yes, on your computer | yes, in the cloud |
 | URL-safe alphabet and data URIs | yes | yes |
