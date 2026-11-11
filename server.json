@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tidybytetools/base64-lite",
+  "title": "base64-lite",
+  "description": "Encode or decode Base64 for text and local files. URL-safe and data-URI options. Local CLI and MCP server.",
+  "repository": {
+    "url": "https://github.com/tidybytetools/base64-lite",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/tidybytetools/base64-lite",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "base64-lite",
+      "version": "1.0.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp",
+          "description": "Starts the MCP server instead of the command-line tool."
+        }
+      ]
+    }
+  ]
+}

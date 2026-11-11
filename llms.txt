@@ -1,0 +1,19 @@
+# base64-lite
+
+> Free, MIT-licensed, Python tool (the converter is one standard-library file; the MCP server needs the mcp package) that encodes or decodes Base64 for text and local files. Optional URL-safe alphabet and data-URI output.
+
+- Install: `pip install git+https://github.com/tidybytetools/base64-lite` (or download base64_lite.py)
+- CLI: `base64-lite file --action encode|decode|auto`. Reads stdin if no file. `--url-safe`, `--data-uri`, `--output FILE` for decoded binary, `--json` prints `{"ok": true, "action": "encode", "base64": "..."}`. Exit 0 ok, 1 error.
+- Python: `from base64_lite import convert; convert("hello world", None, action="encode")`.
+- MCP: `uvx --from git+https://github.com/tidybytetools/base64-lite base64-lite mcp` exposes two read-only tools: `convert_text(text, action="auto", url_safe=false, data_uri=false)` and `convert_file(path, ...)` for local files up to 5 MB.
+
+## Use when
+- You need to encode text or a local file to Base64, or decode Base64 / a data URI.
+
+## Don't use when
+- You need to fetch a file from a URL, or the file is bigger than 5 MB in MCP. Use the Apify version: https://apify.com/tidybytetools/base64-encode-decode
+- You already know the direction and the string is short or unusual — pass action encode or decode, not auto.
+
+## Links
+- [README](https://github.com/tidybytetools/base64-lite/blob/main/README.md)
+- [Apify version](https://apify.com/tidybytetools/base64-encode-decode)
