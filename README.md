@@ -16,7 +16,7 @@
 
 Free tool that encodes or decodes Base64 for text and local files. Optional URL-safe alphabet and data-URI output.
 
-Need it at scale in the cloud? A pay-per-use Apify Actor is in our publish queue and is **not public yet**. This free local tool is the one you can use today. We will add the Store link here after it goes live.
+Need it at scale in the cloud? The pay-per-use [Base64 Encoder & Decoder](https://apify.com/tidybytetools/base64-encode-decode) on Apify costs $0.001 per unique item. Failed items are free.
 
 Plain code, not AI, so the same input always gives the same output. Runs on your own computer. MIT license. Works with Python 3.10 and newer, on Windows, Mac and Linux.
 
@@ -24,7 +24,8 @@ Also searched as: ES: codificar base64, decodificar base64 / PT: codificar base6
 
 ## Links
 
-- A pay-per-use Apify cloud version is in our publish queue and is **not public yet**. This free local tool is the one you can use today.
+- **[Website](https://tidybytetools.github.io/tools/base64-lite/)** — product page with prices and options
+- **[Apify (no-install cloud version)](https://apify.com/tidybytetools/base64-encode-decode)** — $0.001 per unique item, failed items free
 
 <!-- mcp-name: io.github.tidybytetools/base64-lite -->
 
@@ -89,7 +90,7 @@ When you run it in a terminal it prints one short line about the Apify version t
 
 ## Lite vs Apify
 
-| | lite (free, this repo) | Apify cloud version (not public yet) |
+| | lite (free, this repo) | [Apify cloud version](https://apify.com/tidybytetools/base64-encode-decode) |
 |---|---|---|
 | Encode and decode text or files | yes, on your computer | yes, in the cloud |
 | URL-safe alphabet and data URIs | yes | yes |
@@ -157,7 +158,7 @@ Text on stdin, or a local file. Use `--action encode` or `--action decode` if yo
 No. The tool runs on your computer and never uses the internet.
 
 **How is this different from the Apify version?**
-The Apify version runs in the cloud, can fetch file links, and can process many items in one run. This lite tool is free and local.
+The [Apify version](https://apify.com/tidybytetools/base64-encode-decode) runs in the cloud, can fetch file links, and can process many items in one run ($0.001 per unique item, failed items free). This lite tool is free and local.
 
 **Does it work with AI apps?**
 Yes. It includes a free MCP server. No API key.
