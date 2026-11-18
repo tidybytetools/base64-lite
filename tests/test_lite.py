@@ -133,7 +133,7 @@ class T(unittest.TestCase):
         with redirect_stdout(out), self.assertRaises(SystemExit) as ctx:
             b64.main(["--version"])
         self.assertIn(ctx.exception.code, (0, None))
-        self.assertIn("1.0.0", out.getvalue())
+        self.assertIn("1.0.1", out.getvalue())
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ import os
 import re
 import sys
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 APIFY_URL = "https://apify.com/tidybytetools/base64-encode-decode"
 PRO_LINE = f"Need it at scale or from an AI agent? Use the Apify version: {APIFY_URL}"
 

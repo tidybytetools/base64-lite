@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "base64-lite"
-version = "1.0.0"
+version = "1.0.1"
 description = "Encode or decode Base64 for text and local files. URL-safe and data-URI options. Local CLI and MCP server."
 readme = "README.md"
 license = "MIT"
