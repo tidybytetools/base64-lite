@@ -48,13 +48,15 @@ Decode works the other way, including data URIs like `data:text/plain;base64,aGV
 ## Install
 
 ```
-pip install git+https://github.com/tidybytetools/base64-lite
+pip install base64-lite
 ```
+
+Or straight from GitHub: `pip install git+https://github.com/tidybytetools/base64-lite`
 
 Or use pipx, which keeps it in its own space:
 
 ```
-pipx install git+https://github.com/tidybytetools/base64-lite
+pipx install base64-lite
 ```
 
 Or just download `base64_lite.py` and run it with `python3`. That one file uses only Python's standard library. (Installing with pip also adds the `mcp` package, which the MCP server needs.)
@@ -106,7 +108,7 @@ There is a small free MCP server built in. It gives your AI app two tools. Both 
 Run it by hand to check it starts (it waits quietly for an app to talk to it):
 
 ```
-uvx --from git+https://github.com/tidybytetools/base64-lite base64-lite mcp
+uvx base64-lite mcp
 ```
 
 Claude Desktop (`claude_desktop_config.json`) or Cursor (`~/.cursor/mcp.json`):
@@ -116,13 +118,13 @@ Claude Desktop (`claude_desktop_config.json`) or Cursor (`~/.cursor/mcp.json`):
   "mcpServers": {
     "base64-lite": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/tidybytetools/base64-lite", "base64-lite", "mcp"]
+      "args": ["base64-lite", "mcp"]
     }
   }
 }
 ```
 
-`uvx --from git+https://github.com/tidybytetools/base64-lite base64-lite-mcp` starts the same server.
+`uvx --from base64-lite base64-lite-mcp` starts the same server.
 
 Tools:
 
@@ -136,7 +138,7 @@ Encoded results include `base64` (and `dataUri` if you asked). Decoded results i
 - **Use when:** you need to encode text or a local file to Base64, or decode Base64 / a data URI.
 - **Don't use when:** you need to fetch a file from a URL, or the file is bigger than 5 MB in MCP. Use the Apify version for those jobs.
 - **Input:** text on stdin or a file path. Optional `--action auto|encode|decode`, `--url-safe`, `--data-uri`, `--output FILE`.
-- **MCP:** `uvx --from git+https://github.com/tidybytetools/base64-lite base64-lite mcp` gives two read-only tools, `convert_text` and `convert_file`.
+- **MCP:** `uvx base64-lite mcp` gives two read-only tools, `convert_text` and `convert_file`.
 - **Output:** with `--json`, one object such as `{"ok": true, "action": "encode", "base64": "...", "bytesIn": 11}`. On error `ok` is false. Exit code 0 ok, 1 error.
 - Hint lines go to stderr only, and only in a terminal, so stdout is always clean. See also [`llms.txt`](https://github.com/tidybytetools/base64-lite/blob/main/llms.txt).
 
